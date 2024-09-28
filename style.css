@@ -1,0 +1,170 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: Helvetica;
+}
+
+
+/*--------------Header start--------------*/
+
+.header_logo {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+}
+.header_logo:hover {
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+
+
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header_block {
+/*	background-color: red;*/
+}
+
+.header_wrapper {
+/*	background-color: yellow;*/
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+.navigation {
+	display: flex;
+}
+.navigation_link {
+	margin-right: 35px;
+
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+	position: relative;
+}
+.navigation_link:after {
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	content: '';
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+.navigation_link:last-child {
+	margin-right: 0px;
+}
+.navigation_link.acive:after {
+	opacity: 1;
+}
+.navigation_link:hover:after {
+	opacity: 1;
+}
+
+
+/*--------------Header end--------------*/
+
+
+
+/*--------------Intro start--------------*/
+
+.intro_content {
+	height: 1000px;
+	display: flex;
+	align-items: center;
+/*	justify-content: center;*/
+}
+
+.intro_title {
+	color: #000;
+	margin-bottom: 70px;
+	max-width: 1200px;
+	font-size: 54px;
+	font-weight: 700;
+}
+
+.portfolio_btn {
+	display: inline-flex;
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+	font-size: 20px;
+	font-weight: 600;
+	min-width: 250px;
+	height: 50px;
+	align-items: center;
+ 	justify-content: center;
+ 	border: 5px;
+ 	border-color: green;
+
+}
+.portfolio_btn:hover {
+	background-color: red;
+	transition: background-color .2s ease;
+}
+
+/*--------------Intro end--------------*/
+
+
+/*--------------Experience start--------------*/
+
+.info_content {
+	height: 500px;
+	display: flex;
+	margin-bottom: 300px;
+	background-color: #fff;
+	border: 3px #000 solid;
+	justify-content: center;
+	align-items: center;
+}
+
+.info_title {
+	display: flex;
+	color: #000;
+	font-size: 20px;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+}
+
+/*--------------Experience end--------------*/
+
+.cat {
+	display: flex;
+	justify-content: center;
+}
+.img_cat {
+	height: 300px;
+}
+
+/*--------------Footer start--------------*/
+
+.last_content {
+	margin-top: 300px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+}
+
+/*--------------Footer end--------------*/
